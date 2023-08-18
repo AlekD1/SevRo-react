@@ -1,7 +1,5 @@
-
-import DirectionsSlice from "../../components/Directions-slice/DirectionsSlice";
-import TeamSlice from "../../components/Team-slice/TeamSlice";
-
+import DirectionsSlice from "../../slices/Directions-slice/DirectionsSlice";
+import TeamSlice from "../../slices/Team-slice/TeamSlice";
 
 function AboutPage() {
 	return (

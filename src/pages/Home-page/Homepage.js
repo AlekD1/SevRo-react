@@ -1,15 +1,14 @@
-import PromoSlice from "../../components/Promo-Slice/PromoSlice";
-import NewsSliderSlice from "../../components/NewsSlider-slice/NewsSlider";
-import StatisticsSlice from "../../components/Statistics-slice/StatisticsSlice";
-import RsoSlice from "../../components/Rso-slice/RsoSlice";
-import VideoSlice from "../../components/Video-slice/VideoSlice";
-import QuestionSlice from "../../components/Question-Slice/QuestionSlice";
-import FormSlice from "../../components/Form-slice/FormSlice";
+import PromoSlice from "../../slices/Promo-Slice/PromoSlice";
+import StatisticsSlice from "../../slices/Statistics-slice/StatisticsSlice";
+import RsoSlice from "../../slices/Rso-slice/RsoSlice";
+import VideoSlice from "../../slices/Video-slice/VideoSlice";
+import QuestionSlice from "../../slices/Question-Slice/QuestionSlice";
+import NewsSliderSlice from "../../slices/NewsSlider-slice/NewsSlider";
+import FormSlice from "../../slices/Form-slice/FormSlice";
 
-
-function Homepage() {
+function HomePage() {
 	return (
-		<div className="HomePage">
+		<main className="HomePage">
 			<PromoSlice />
 			<StatisticsSlice />
 			<RsoSlice />
@@ -17,8 +16,8 @@ function Homepage() {
 			<QuestionSlice />
 			<NewsSliderSlice />
 			<FormSlice />
-		</div>
+		</main>
 	);
 }
 
-export default Homepage;
+export default HomePage;

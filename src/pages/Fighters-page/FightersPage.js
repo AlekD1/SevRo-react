@@ -1,13 +1,13 @@
-import DocumentSlice from "../../components/Document-slice/DocumentSlice";
-import NewsSlider from "../../components/NewsSlider-slice/NewsSlider";
+import DocumentSlice from "../../slices/Document-slice/DocumentSlice";
+import NewsSlider from "../../slices/NewsSlider-slice/NewsSlider";
 
-function Fighterspage() {
-    return (
-        <div className="Fighterspage">
-            <DocumentSlice />
-            <NewsSlider />
-        </div>
-    );
+function FightersPage() {
+	return (
+		<div className="Fighterspage">
+			<DocumentSlice />
+			<NewsSlider />
+		</div>
+	);
 }
 
-export default Fighterspage;
+export default FightersPage;

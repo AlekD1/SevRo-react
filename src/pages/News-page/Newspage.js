@@ -1,14 +1,12 @@
-
-import NewsSlice from "../../components/News-slice/NewsSlice";
+import NewsSlice from "../../slices/News-slice/NewsSlice";
 import "./newspage.scss";
 
-function Newspage() {
+function NewsPage() {
 	return (
 		<div className="Newspage">
-		
 			<NewsSlice />
 		</div>
 	);
 }
 
-export default Newspage;
+export default NewsPage;

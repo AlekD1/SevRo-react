@@ -66,36 +66,35 @@ function Header() {
 					</Link>
 				</div>
 
-				<div className="Header__headerLinks">
-					<ul>
-						<li>
-							<Link to="/about" onClick={Scroll}>
-								о нас
-							</Link>
-						</li>
-						<li>
-							<Link to="/news" onClick={Scroll}>
-								новости
-							</Link>
-						</li>
-						<li>
-							<Link to="/gallery" onClick={Scroll}>
-								галерея
-							</Link>
-						</li>
-						<li>
-							<Link to="/fighters" onClick={Scroll}>
-								бойцам
-							</Link>
-						</li>
-						<li>
-							<Link to="/#form">сотрудничество</Link>
-						</li>
-						<li>
-							<Link to="/#question">Q&A</Link>
-						</li>
-					</ul>
-				</div>
+				<ul className="Header__headerLinks">
+					<li>
+						<Link to="/about" onClick={Scroll}>
+							о нас
+						</Link>
+					</li>
+					<li>
+						<Link to="/news" onClick={Scroll}>
+							новости
+						</Link>
+					</li>
+					<li>
+						<Link to="/gallery" onClick={Scroll}>
+							галерея
+						</Link>
+					</li>
+					<li>
+						<Link to="/fighters" onClick={Scroll}>
+							бойцам
+						</Link>
+					</li>
+					<li>
+						<Link to="/#form">сотрудничество</Link>
+					</li>
+					<li>
+						<Link to="/#question">Q&A</Link>
+					</li>
+				</ul>
+
 				<div className="Header__headerButton">
 					<button className="Header__headerButton__button">Вступить</button>
 				</div>

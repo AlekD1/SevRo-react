@@ -1,33 +1,36 @@
-import Footer from "./components/Footer/Footer";
-import Newspage from "./pages/News-page/Newspage";
-import Homepage from "./pages/Home-page/Homepage";
-import NewsOpenPage from "./pages/NewsOpen-page/NewsOpenPage";
-import Fighterspage from "./pages/Fighters-page/FightersPage";
-import AboutPage from "./pages/About-page/AboutPage";
 import { BrowserRouter, Router, Routes, Route, Link } from "react-router-dom";
 import Header from "./components/Header/Header";
+import HomePage from "./pages/Home-page/HomePage";
+import AboutPage from "./pages/About-page/AboutPage";
+import NewsPage from "./pages/News-page/NewsPage";
+import GalleryPage from "./pages/Gallery-page/GalleryPage";
+import FightersPage from "./pages/Fighters-page/FightersPage";
 import SquadPage from "./pages/Squad-page/SquadPage";
-import AlbumsPage from "./pages/Albums-page/AlbumsPage";
-import PhotoPage from "./pages/Photos-page/PhotoPage";
+import NewsOpenPage from "./pages/NewsOpen-page/NewsOpenPage";
+import GalleryOpenPage from "./pages/GalleryOpen-page/GalleryOpenPage";
+import SquadOpenPage from "./pages/SquadOpen-page/SquadOpenPage";
+import Footer from "./components/Footer/Footer";
 
 function App() {
 	return (
-		<div className="Page">
+		<>
 			<BrowserRouter>
 				<Header />
 				<Routes>
-					<Route path="/SquadPage" element={<SquadPage />} />
-					<Route path="/news" element={<Newspage />} />
-					<Route path="" element={<Homepage />} />
-					<Route path="/fighters" element={<Fighterspage />} />
-					<Route path="/news/open" element={<NewsOpenPage />} />
+					<Route path="" element={<HomePage />} />
 					<Route path="/about" element={<AboutPage />} />
-					<Route path="/gallery" element={<AlbumsPage />} />
-					<Route path="/photopage" element={<PhotoPage />} />
+					<Route path="/news" element={<NewsPage />} />
+					<Route path="/gallery" element={<GalleryPage />} />
+					<Route path="/fighters" element={<FightersPage />} />
+					<Route path="/squads" element={<SquadPage />} />
+
+					<Route path="/news/open" element={<NewsOpenPage />} />
+					<Route path="/gallery/open" element={<GalleryOpenPage />} />
+					<Route path="/squads/open" element={<SquadOpenPage />} />
 				</Routes>
 				<Footer />
 			</BrowserRouter>
-		</div>
+		</>
 	);
 }
 

@@ -1,0 +1,26 @@
+@import "../../index.scss";
+
+.Squad-slice {
+	margin-bottom: 80px;
+	padding: 16px 0px;
+	&__title {
+		@include font-title-italic;
+		margin-bottom: 8px;
+	}
+}
+
+@import "../../index.scss";
+.Masonry-grid {
+	gap: 20px !important;
+	div {
+		gap: 20px !important;
+	}
+}
+
+@media (max-width: $breakpoint_sm) {
+	.Masonry-grid {
+		div {
+			gap: 16px !important;
+		}
+	}
+}
