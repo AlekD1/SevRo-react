@@ -1,10 +1,13 @@
 import '../Directions-slice/directions.scss';
 import DirectionCard from '../DirectionCard/DirectionCard';
 import '../DirectionCard/DirectionCard.scss';
+import { useState } from "react";
 import { Link } from 'react-router-dom';
 
 function DirectionsSlice() {
 
+    const items = [0, 1, 2, 3, 4, 5, 6];
+    const [activeCard, setActiveCard] = useState(items[0]);
     return (
 
         <div className="Directions-slice">
@@ -22,14 +25,17 @@ function DirectionsSlice() {
                         </Link>
                     </div>
                 </div>
-                <div className="Directions-slice__icons">
-                    <DirectionCard />
-                    <DirectionCard />
-                    <DirectionCard />
-                    <DirectionCard />
-                    <DirectionCard />
-                    <DirectionCard />
-                    <DirectionCard />
+                <div className="Directions-slice__icons" >
+
+                    {items.map((value) => {
+                        return (
+                            <div onClick={() => setActiveCard(value)}>
+                                <DirectionCard key={value} type={activeCard === value ? "DirectionCard active" : "DirectionCard"} />
+
+                            </div>
+                        );
+                    })}
+
                 </div>
             </div>
         </div >

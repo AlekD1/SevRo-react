@@ -5,7 +5,7 @@ function SquadCard(props) {
 
 	const handleClick = event => {
 		let card = document.querySelectorAll('squad-card_active');
-		// 👇️ toggle class on click
+
 
 		if (card) {
 			event.currentTarget.classList.toggle('squad-card_active');

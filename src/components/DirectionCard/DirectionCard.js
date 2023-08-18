@@ -1,15 +1,11 @@
 import '../DirectionCard/DirectionCard.scss';
 
-function DirectionCard() {
+function DirectionCard(props) {
 
-    const ActionImg = event => {
-
-        event.currentTarget.classList.toggle('active');
-    };
 
     return (
 
-        <div className="DirectionCard" onClick={ActionImg}>
+        <div className={props.type} >
             <img className="DirectionCard__style" src="img/directions2.jpg"></img>
             <div className="DirectionCard__overlay">
                 <img className="DirectionCard__overlay__style" src="img/ico11-spo.svg"></img>

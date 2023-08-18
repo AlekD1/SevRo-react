@@ -18,7 +18,19 @@
 		height: 120px;
 		border-radius: 10px;
 		border: 2px solid $color-primary;
+		-webkit-touch-callout: none;
+		/* iOS Safari */
+		-webkit-user-select: none;
+		/* Safari */
+		-khtml-user-select: none;
+		/* Konqueror HTML */
+		-moz-user-select: none;
+		/* Old versions of Firefox */
+		-ms-user-select: none;
+		/* Internet Explorer/Edge */
+		user-select: none;
 	}
+
 	&__name {
 		color: $color-background;
 		font-family: Montserrat;
@@ -26,7 +38,19 @@
 		font-style: normal;
 		font-weight: 600;
 		line-height: normal;
+		-webkit-touch-callout: none;
+		/* iOS Safari */
+		-webkit-user-select: none;
+		/* Safari */
+		-khtml-user-select: none;
+		/* Konqueror HTML */
+		-moz-user-select: none;
+		/* Old versions of Firefox */
+		-ms-user-select: none;
+		/* Internet Explorer/Edge */
+		user-select: none;
 	}
+
 	&__description {
 		display: none;
 		color: $color-background;
@@ -35,7 +59,19 @@
 		font-style: normal;
 		font-weight: 400;
 		line-height: normal;
+		-webkit-touch-callout: none;
+		/* iOS Safari */
+		-webkit-user-select: none;
+		/* Safari */
+		-khtml-user-select: none;
+		/* Konqueror HTML */
+		-moz-user-select: none;
+		/* Old versions of Firefox */
+		-ms-user-select: none;
+		/* Internet Explorer/Edge */
+		user-select: none;
 	}
+
 	&__button {
 		display: none;
 		background: none;
@@ -53,12 +89,25 @@
 		border: none;
 		cursor: pointer;
 		transition: 0.2s;
+		-webkit-touch-callout: none;
+		/* iOS Safari */
+		-webkit-user-select: none;
+		/* Safari */
+		-khtml-user-select: none;
+		/* Konqueror HTML */
+		-moz-user-select: none;
+		/* Old versions of Firefox */
+		-ms-user-select: none;
+		/* Internet Explorer/Edge */
+		user-select: none;
 	}
+
 	&__button:hover {
 		background-color: $color-background;
 		color: $color-dark;
 		outline: 3px solid $color-rarly;
 	}
+
 	&__button:active {
 		background-color: $color-primary;
 		color: $color-background;
@@ -68,10 +117,13 @@
 
 .squad-card_active {
 	background: $color-primary;
-	cursor: default;
+
+	cursor: pointer;
+
 	.squad-card__button {
 		display: block;
 	}
+
 	.squad-card__description {
 		display: inline;
 	}
