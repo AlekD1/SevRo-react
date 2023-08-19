@@ -5,7 +5,7 @@
 	width: 580px;
 	align-items: center;
 	border-radius: 10px;
-	background: $color-background;
+	background: $color-white;
 	cursor: pointer;
 	-webkit-touch-callout: none;
 	/* iOS Safari */
@@ -24,7 +24,7 @@
 		padding: 8px 8px 8px 24px;
 		background: $color-primary;
 		list-style: none;
-		color: $color-background;
+		color: $color-white;
 		font-family: Montserrat;
 		font-size: 20px;
 		font-style: normal;
@@ -39,7 +39,7 @@
 			width: 40px;
 			height: 40px;
 			border-radius: 50%;
-			background-color: $color-background;
+			background-color: $color-white;
 			-moz-border-radius: 50%;
 			-webkit-border-radius: 50%;
 			-khtml-border-radius: 50%;
@@ -55,10 +55,9 @@ details[open] {
 	border: 1px solid rgba(0, 0, 0, 0.2);
 
 	p {
-
 		padding-left: 24px;
 		padding-right: 24px;
-		background: $color-background;
+		background: $color-white;
 		font-family: Montserrat;
 		font-size: 20px;
 		font-style: normal;

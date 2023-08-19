@@ -3,7 +3,7 @@
 @media (max-width: $breakpoint_xxl) {
 	.Header {
 		&__headerLinks {
-			display: none;
+			display: none !important;
 		}
 
 		&__headerButton {
@@ -20,7 +20,7 @@
 
 .Header_light {
 	a {
-		color: $color-background !important;
+		color: $color-white !important;
 	}
 }
 
@@ -103,7 +103,7 @@
 			padding: 6px 16px;
 			width: 129px;
 			border-radius: 10px;
-			color: $color-background;
+			color: $color-white;
 			background: $color-primary;
 			cursor: pointer;
 			font-family: Montserrat;
@@ -170,7 +170,7 @@
 				}
 
 				a {
-					color: $color-background;
+					color: $color-white;
 					text-decoration: none;
 					user-select: none;
 				}
@@ -193,7 +193,7 @@
 					padding: 6px 16px;
 					width: 129px;
 					border-radius: 10px;
-					color: $color-background;
+					color: $color-white;
 					background: transparent;
 					cursor: pointer;
 					font-family: Montserrat;
@@ -202,7 +202,7 @@
 					align-items: center;
 					line-height: normal;
 					font-weight: 500;
-					border: 2px solid $color-background;
+					border: 2px solid $color-white;
 				}
 
 				&__button:hover {

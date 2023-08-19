@@ -32,7 +32,7 @@
 	}
 
 	&__name {
-		color: $color-background;
+		color: $color-white;
 		font-family: Montserrat;
 		font-size: 20px;
 		font-style: normal;
@@ -53,7 +53,7 @@
 
 	&__description {
 		display: none;
-		color: $color-background;
+		color: $color-white;
 		font-family: Montserrat;
 		font-size: 20px;
 		font-style: normal;
@@ -76,7 +76,7 @@
 		display: none;
 		background: none;
 		box-sizing: content-box;
-		color: $color-background;
+		color: $color-white;
 		padding: 8px 16px;
 		border-radius: 10px;
 		font-family: Montserrat;
@@ -84,7 +84,7 @@
 		font-style: normal;
 		font-weight: 400;
 		line-height: normal;
-		outline: 2px solid $color-background;
+		outline: 2px solid $color-white;
 		max-width: 100px;
 		border: none;
 		cursor: pointer;
@@ -103,15 +103,15 @@
 	}
 
 	&__button:hover {
-		background-color: $color-background;
+		background-color: $color-white;
 		color: $color-dark;
 		outline: 3px solid $color-rarly;
 	}
 
 	&__button:active {
 		background-color: $color-primary;
-		color: $color-background;
-		outline: 3px solid $color-background;
+		color: $color-white;
+		outline: 3px solid $color-white;
 	}
 }
 

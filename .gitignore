@@ -11,8 +11,8 @@
 # production
 /build
 
-#video
-/public/video
+# #video
+# /public/video
 
 
 # misc
