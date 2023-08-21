@@ -1,13 +1,10 @@
 @import "../../index";
 
-
 .DirectionCard:hover .DirectionCard__overlay__style {
 	position: relative;
 	transform: rotate(-30deg);
 	z-index: 12;
 }
-
-
 
 .DirectionCard:hover .DirectionCard__overlay {
 	background: rgba(0, 0, 0, 0.6);
@@ -17,8 +14,7 @@
 	width: 180px;
 	height: 180px;
 	border-radius: 10px;
-	box-shadow: 4px 4px 8px 0px rgba(255, 255, 255, 0.25),
-		-4px -4px 8px 0px rgba(0, 0, 0, 0.5);
+	box-shadow: 4px 4px 8px 0px rgba(255, 255, 255, 0.25), -4px -4px 8px 0px rgba(0, 0, 0, 0.5);
 	z-index: 11;
 	position: relative;
 	transition: 0.3s;
@@ -64,7 +60,7 @@
 	}
 }
 
-@media (max-width: $breakpoint_xll) {
+@media (max-width: $breakpoint_xxl) {
 	.DirectionCard {
 		width: 120px;
 		height: 120px;
@@ -72,16 +68,12 @@
 
 	.active {
 		scale: (1.05);
-
-		.DirectionCard__overlay {
-			opacity: 0 !important;
-		}
 	}
 }
 
-@media (max-width: $breakpoint_xl) {
+@media (max-width: $breakpoint_m) {
 	.DirectionCard {
-		width: 140px;
-		height: 140px;
+		width: 65px;
+		height: 65px;
 	}
 }

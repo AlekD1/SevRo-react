@@ -5,6 +5,8 @@
 	font-weight: 700;
 	line-height: 130%;
 	text-transform: capitalize;
+	margin-bottom: 33px;
+	color: $color-primary;
 }
 
 @mixin font-title-italic {
@@ -13,6 +15,7 @@
 	font-style: italic;
 	font-weight: 500;
 	line-height: normal;
+	margin-bottom: 8px;
 }
 
 @mixin marginslice($px) {

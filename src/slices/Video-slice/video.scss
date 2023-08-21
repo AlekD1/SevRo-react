@@ -9,7 +9,7 @@
 	}
 }
 
-@media (max-width: $breakpoint_s) {
+@media (max-width: $breakpoint_m) {
 	.Video-slice {
 		@include marginslice(40px);
 	}

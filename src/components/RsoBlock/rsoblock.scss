@@ -1,40 +1,21 @@
 @import "../../index";
 
 .RsoBlock__style {
-	padding: 8px 32px 8px 16px;
-	text-align: right;
-	border-radius: 10px;
-	border: 1px solid rgba(0, 0, 0, 0.2);
-	background: $color-primary;
-	color: $color-white;
-	font-family: Montserrat;
-	font-size: 32px;
-	font-style: normal;
-	font-weight: 700;
-	line-height: 130%;
-	text-transform: lowercase;
-	outline: none;
 	display: flex;
 	align-items: center;
 	gap: 16px;
-	max-width: 244px;
+	padding: 8px 32px 8px 16px;
+	border-radius: 10px;
+	outline: 1px solid rgba(0, 0, 0, 0.2);
+	background: $color-primary;
+	color: $color-white;
+	font-size: 32px;
+	font-weight: 700;
+	text-transform: lowercase;
 	justify-self: right;
+	min-width: 240px;
 }
 
 .RsoBlock__style:nth-child(even) {
 	align-self: flex-start;
-}
-
-
-@media (max-width: $breakpoint_sm) {
-
-	.RsoBlock__style {
-		width: 40% !important;
-		font-size: 20px !important;
-
-		img {
-			width: 30px;
-			height: 30px;
-		}
-	}
 }

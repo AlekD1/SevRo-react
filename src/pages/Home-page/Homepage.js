@@ -12,7 +12,7 @@ function HomePage() {
 			<PromoSlice />
 			<StatisticsSlice />
 			<RsoSlice />
-			<VideoSlice />
+			{/* <VideoSlice /> */}
 			<QuestionSlice />
 			<NewsSliderSlice />
 			<FormSlice />

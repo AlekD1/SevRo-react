@@ -1,19 +1,11 @@
 @import "../../index";
 
 .StatisticsBlock {
-	display: flex;
-	flex-direction: column;
-
-	&__title {
-		font-size: 20px;
-	}
 	&__value {
-		color: $color-primary;
-		font-family: Montserrat;
 		font-size: 64px;
-		font-style: normal;
 		font-weight: 800;
 		line-height: 130%;
 		text-align: left;
+		color: $color-primary;
 	}
 }

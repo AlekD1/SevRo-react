@@ -22,7 +22,7 @@
 @media (max-width: $breakpoint_xxl) {
 	.News-slice {
 		&__slider {
-			&__content>.News-slice__slider__card:nth-child(1n + 4) {
+			&__content > .News-slice__slider__card:nth-child(1n + 4) {
 				display: none !important;
 			}
 
@@ -36,7 +36,7 @@
 @media (max-width: $breakpoint_xl) {
 	.News-slice {
 		&__slider {
-			&__content>.News-slice__slider__card:nth-child(1n + 3) {
+			&__content > .News-slice__slider__card:nth-child(1n + 3) {
 				display: none !important;
 			}
 
@@ -56,12 +56,12 @@
 	}
 }
 
-@media (max-width: $breakpoint_s) {
+@media (max-width: $breakpoint_m) {
 	.News-slice {
 		@include marginslice(40px);
 
 		.News-slice__slider {
-			&__content>.News-slice__slider__card:nth-child(1n + 2) {
+			&__content > .News-slice__slider__card:nth-child(1n + 2) {
 				display: none !important;
 			}
 

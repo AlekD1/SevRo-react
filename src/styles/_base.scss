@@ -26,9 +26,19 @@ body {
 	padding-right: 24px;
 }
 
-@media (max-width: $breakpoint_m) {
+@media (max-width: $breakpoint_l) {
 	.container {
 		padding-left: 16px;
 		padding-right: 16px;
+	}
+}
+
+.SliceMargin {
+	@include marginslice(80px);
+}
+
+@media (max-width: $breakpoint_m) {
+	.SliceMargin {
+		@include marginslice(40px);
 	}
 }

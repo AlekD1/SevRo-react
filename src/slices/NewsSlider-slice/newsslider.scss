@@ -105,7 +105,7 @@
 	.NewsSlider {
 		.NewsSlider-container {
 			.NewsSlider__slider {
-				&__content>.News-card:nth-child(1n + 4) {
+				&__content > .News-card:nth-child(1n + 4) {
 					display: none !important;
 				}
 
@@ -117,10 +117,10 @@
 	}
 }
 
-@media (max-width: $breakpoint_xl) {
+@media (max-width: $breakpoint_l) {
 	.NewsSlider {
 		&__slider {
-			&__content>.News-card:nth-child(1n + 3) {
+			&__content > .News-card:nth-child(1n + 3) {
 				display: none !important;
 			}
 
@@ -140,12 +140,10 @@
 	}
 }
 
-@media (max-width: $breakpoint_s) {
+@media (max-width: $breakpoint_m) {
 	.NewsSlider {
-		@include marginslice(40px);
-
 		.NewsSlider__slider {
-			&__content>.News-card:nth-child(1n + 2) {
+			&__content > .News-card:nth-child(1n + 2) {
 				display: none !important;
 			}
 

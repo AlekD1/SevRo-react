@@ -1,12 +1,12 @@
-import '../StatisticsBlock/statisticsblock.scss';
+import "../StatisticsBlock/statisticsblock.scss";
 
-function StatisticsBlock() {
-    return (
-        <div className="StatisticsBlock">
-            <div className="StatisticsBlock__title">направлений</div>
-            <div className="StatisticsBlock__value">7</div>
-        </div>
-    );
+function StatisticsBlock(props) {
+	return (
+		<div className="StatisticsBlock">
+			<p className="StatisticsBlock__title">{props.name}</p>
+			<p className="StatisticsBlock__value">{props.value}</p>
+		</div>
+	);
 }
 
 export default StatisticsBlock;
