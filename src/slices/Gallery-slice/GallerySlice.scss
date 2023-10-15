@@ -1,5 +1,47 @@
 @import "../../index";
 
+@media (max-width: $breakpoint_m) {
+	.Gallery-slice {
+
+		&__albums {
+			display: flex !important;
+			flex-wrap: wrap;
+			width: 100%;
+			align-items: center;
+			justify-content: center;
+			justify-items: center;
+
+		}
+
+		.AlbumCard:nth-child(10n + 1) {
+
+			.AlbumCard__photo {
+				width: 100%;
+				height: 280px;
+			}
+		}
+
+		.AlbumCard:nth-child(10n + 8) {
+
+			.AlbumCard__photo {
+				width: 100%;
+				height: 280px;
+			}
+		}
+
+		.AlbumCard__photo {
+			width: 100%;
+			height: 280px;
+		}
+
+		.AlbumCard {
+			width: 100%;
+		}
+	}
+}
+
+
+
 .Gallery-slice {
 	margin-bottom: 80px;
 
@@ -12,6 +54,7 @@
 		@include font-title-italic;
 		margin-bottom: 8px;
 	}
+
 	&__albums {
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
