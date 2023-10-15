@@ -1,5 +1,58 @@
 @import "../../index";
 
+@media (max-width: $breakpoint_m) {
+	.ErrorBlock {
+		&-container {
+			&_icon {}
+
+			&_text {
+				&_error-name {
+					font-size: 86px !important;
+				}
+
+				&_notfound {
+					font-size: 22px !important;
+				}
+
+				&_description {
+					font-size: 15px !important;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: $breakpoint_s) {
+	.ErrorBlock {
+		&-container {
+			&_icon {
+				.ErrorBlock-container_photo {
+					display: none;
+				}
+			}
+
+			&_text {
+				&_error-name {
+					font-size: 86px !important;
+
+					.ErrorBlock-container_photo {
+						display: block !important;
+						width: 65px;
+					}
+				}
+
+				&_notfound {
+					font-size: 22px !important;
+				}
+
+				&_description {
+					font-size: 15px !important;
+				}
+			}
+		}
+	}
+}
+
 
 .ErrorBlock {
 	@include marginslice(80px);
@@ -14,13 +67,14 @@
 	justify-content: center;
 	column-gap: 16px;
 
-	&_icon {
-		&_photo {
-			opacity: 65%;
-			width: 310px;
 
-		}
+
+	&_photo {
+		opacity: 65%;
+		width: 310px;
+
 	}
+
 
 	&_text {
 		display: flex;
@@ -36,8 +90,16 @@
 			font-family: Gotham;
 			font-size: 96px;
 			font-style: normal;
+
+			justify-content: center;
+			display: flex;
+			flex-direction: row;
 			font-weight: 700;
 			line-height: 70%;
+
+			.ErrorBlock-container_photo {
+				display: none;
+			}
 		}
 
 		&_notfound {

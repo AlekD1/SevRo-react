@@ -6,10 +6,11 @@ function ErrorBlock() {
 		<div className="ErrorBlock">
 			<div className="container ErrorBlock-container">
 				<div className="ErrorBlock-container_icon">
-					<img src="./img/logo-sevro-error.png" className="ErrorBlock-container_icon_photo"></img>
+					<img src="./img/logo-sevro-error.png" className="ErrorBlock-container_photo"></img>
 				</div>
 				<div className="ErrorBlock-container_text">
 					<div className="ErrorBlock-container_text_error-name">
+						<img src="./img/logo-sevro-error.png" className="ErrorBlock-container_photo"></img>
 						404
 					</div>
 					<div className="ErrorBlock-container_text_notfound">
