@@ -1,4 +1,4 @@
-
+import "./newsopenpage.scss"
 
 function NewsOpenPage() {
 	return (

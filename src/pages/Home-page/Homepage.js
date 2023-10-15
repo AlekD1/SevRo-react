@@ -5,6 +5,7 @@ import VideoSlice from "../../slices/Video-slice/VideoSlice";
 import QuestionSlice from "../../slices/Question-Slice/QuestionSlice";
 import NewsSliderSlice from "../../slices/NewsSlider-slice/NewsSlider";
 import FormSlice from "../../slices/Form-slice/FormSlice";
+import "./homepage.scss";
 
 function HomePage() {
 	return (

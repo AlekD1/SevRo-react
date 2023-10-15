@@ -62,6 +62,7 @@
 			&_nav {
 				column-gap: 0 !important;
 			}
+
 			&__links {
 				font-size: 18px !important;
 
@@ -88,11 +89,14 @@
 }
 
 .Footer-slice {
+
+
 	&__content {
 		display: flex;
 		justify-content: space-between;
 		padding-top: 16px;
 		column-gap: 20px;
+
 
 		&_nav {
 			display: flex;
@@ -133,6 +137,7 @@
 				a:hover {
 					color: $color-secondary;
 				}
+
 				a:active {
 					color: $color-rarly;
 				}
@@ -173,10 +178,12 @@
 				border-radius: 10px;
 				border: 3px solid rgba(0, 0, 0, 0.2);
 			}
+
 			&__button:hover {
 				background: $color-secondary;
 				color: $color-white;
 			}
+
 			&__button:active {
 				background: $color-rarly;
 				color: $color-white;
@@ -194,6 +201,7 @@
 			letter-spacing: 0.32px;
 			text-transform: uppercase;
 		}
+
 		a {
 			text-decoration: none;
 			cursor: default;

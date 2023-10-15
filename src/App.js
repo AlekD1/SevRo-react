@@ -11,10 +11,11 @@ import GalleryOpenPage from "./pages/GalleryOpen-page/GalleryOpenPage";
 import SquadOpenPage from "./pages/SquadOpen-page/SquadOpenPage";
 import Footer from "./components/Footer/Footer";
 import Error from "./pages/Error-page/Error";
+import PhotoPage from "./pages/Photo-page/PhotoPage";
 
 function App() {
 	return (
-		<>
+		<div className="Page">
 			<BrowserRouter>
 				<Header />
 				<Routes>
@@ -26,12 +27,14 @@ function App() {
 					<Route path="/fighters" element={<FightersPage />} />
 					<Route path="/squads" element={<SquadPage />} />
 					<Route path="/news/open" element={<NewsOpenPage />} />
+					<Route path="/SquadPage" element={<SquadPage />} />
+					<Route path="/photopage" element={<PhotoPage />} />
 					<Route path="/gallery/open" element={<GalleryOpenPage />} />
 					<Route path="/squads/open" element={<SquadOpenPage />} />
 				</Routes>
 				<Footer />
 			</BrowserRouter>
-		</>
+		</div>
 	);
 }
 

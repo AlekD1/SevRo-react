@@ -3,7 +3,7 @@
 
 .ErrorPage {
 	@include marginslice(80px);
-
+	min-height: calc(100vh - 401px);
 }
 
 

@@ -4,7 +4,7 @@ function NewsCard() {
 	return (
 
 		<div className="News-card">
-			<Link to="/newsopen">
+			<Link to="/news/open">
 				<div className="News-card__photo">
 					<img src="./img/new__photo.png"></img>
 				</div>

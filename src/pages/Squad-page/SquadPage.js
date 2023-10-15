@@ -1,4 +1,5 @@
 import SquadSlice from "../../slices/Squad-slice/SquadSlice";
+import "./squadpage.scss";
 
 function SquadPage() {
 	return (
